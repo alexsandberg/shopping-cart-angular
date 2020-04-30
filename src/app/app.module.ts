@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { LoginComponent } from './login/login.component';
             { path: 'login', component: LoginComponent },
             { path: 'admin-products', component: AdminProductsComponent },
             { path: 'admin-orders', component: AdminOrdersComponent }
-        ])
+        ]),
+        NgbModule
     ],
     providers: [],
     bootstrap: [AppComponent]
