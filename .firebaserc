@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "oshop-3941f": {
+      "hosting": {
+        "oshop": [
+          "oshop-3941f"
+        ]
+      }
+    }
+  }
+}
