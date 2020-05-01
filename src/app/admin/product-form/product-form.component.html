@@ -27,8 +27,8 @@
                 <label for="category">Category</label>
                 <select #category="ngModel" ngModel name="category" id="category" class="form-control" required>
                     <option value=""></option>
-                    <option *ngFor="let c of (categories$ | async)" [value]="c.$key">
-                        {{ c.name }}
+                    <option *ngFor="let c of (categories$ | async)" [value]="c.key">
+                        {{ c.payload.val().name }}
                     </option>
                 </select>
                 <div class="alert alert-danger" *ngIf="category.touched && category.invalid">
