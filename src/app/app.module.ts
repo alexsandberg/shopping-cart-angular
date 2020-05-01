@@ -5,6 +5,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CustomFormsModule } from 'ngx-custom-validators';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,6 +50,7 @@ import { ProductService } from './product.service';
         AngularFireDatabaseModule,
         AngularFireAuthModule,
         FormsModule,
+        CustomFormsModule,
         RouterModule.forRoot([
             { path: '', component: HomeComponent },
             { path: 'products', component: ProductsComponent },
